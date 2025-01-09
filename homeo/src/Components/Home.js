@@ -1372,7 +1372,7 @@ and  Spondylosis`}</span>
                 </div>
 
                 <div className="location-1446 pos-abs">
-                  <span className="location-1446-0">{`Location`}</span>
+                  <a className="location-1446-0" href="https://maps.app.goo.gl/zBpb6KuRLYGJhU1g7">{`Location`}</a>
                 </div>
 
                 <div className="group-499-1447 pos-abs">
@@ -1428,8 +1428,8 @@ Paralysis
                     </div>
                   </div>
 
-                  <div className="c-044-49570322-1456 pos-abs">
-                    <span className="c-044-49570322-1456-0">{`044 49570322`}</span>
+                  <div className="c-044-49570322-1456 pos-abs" onClick={handlePhoneCall} style={{cursor:"pointer"}}>
+                    <span className="c-044-49570322-1456-0">{`+919129371733`}</span>
                   </div>
                 </div>
 
@@ -1494,7 +1494,7 @@ Paralysis
                 </div>
 
                 <div className="c-2024-all-rights-1471 pos-abs">
-                  <span className="c-2024-all-rights-1471-0">{`© 2024  All Rights Reserved.`}</span>
+                  <span className="c-2024-all-rights-1471-0">{`© 2024 HOMOEOPATHIC HEALTH CARE & RESEARCH CENTER  All Rights Reserved.`}</span>
                 </div>
               </div>
             </div>

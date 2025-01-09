@@ -594,14 +594,14 @@ body {
   opacity: 1;
 }
 .logo-pdfpage000-1189 {
-  width: 29.29%;
-  height: 100%;
-  top: 0%;
-  left: 0%;
-  z-index: 1;
-  transform: rotate(0deg);
-  overflow: hidden;
-  border-radius: 1054.5px;
+  width: 33.29%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+    transform: rotate(0deg);
+    overflow: hidden;
+    border-radius: 1043.5px;
 }
 .homoeopathic-he-1188 {
   width: 64.44%;
@@ -614,7 +614,7 @@ body {
   line-height: 0px;
 }
 .homoeopathic-he-1188-0 {
-  font-size: calc(12 * var(--ratio));
+  font-size: calc(14 * var(--ratio));
 
   line-height: calc(12 * var(--ratio));
 
@@ -3024,13 +3024,13 @@ body {
   background-image: var(--image-28);
 }
 .c-2024-all-rights-1471 {
-  width: 19.17%;
+  width: 39.17%;
   height: 6.54%;
-  top: 90.2%;
-  left: 75.28%;
+  top: 85.2%;
+  left: 56.28%;
   z-index: 6;
   transform: rotate(0deg);
-  text-align: left;
+  text-align: center;
   line-height: 0px;
 }
 .istockphoto1208-1480 {
