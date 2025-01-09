@@ -1,5 +1,5 @@
-import React,{useState} from "react";
-import "../Style/Home.css"
+import React, { useState } from "react";
+import "../Style/Home.css";
 import image1 from "../Assets/Images/image1.png";
 import image2 from "../Assets/Images/image2.png";
 import image3 from "../Assets/Images/image3.png";
@@ -30,13 +30,39 @@ import image27 from "../Assets/Images/image27.png";
 import image28 from "../Assets/Images/image28.png";
 import image29 from "../Assets/Images/image29.png";
 import image30 from "../Assets/Images/image30.png";
+import image31 from "../Assets/Images/image31.png";
 import { useNavigate } from "react-router-dom";
 
-
 function Home() {
-    
-    const navigate= useNavigate();
-  
+  const images = [
+    { id: 1, src: image31, alt: "Image 1" },
+    { id: 2, src: image31, alt: "Image 2" },
+    { id: 3, src: image31, alt: "Image 3" },
+  ];
+  const navigate = useNavigate();
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
+  const handlePhoneCall = () => {
+    const phoneNumber = "+919129371733"; // Replace with the desired phone number
+    window.location.href = `tel:${phoneNumber}`;
+  };
+  const openWhatsApp = () => {
+    const phoneNumber = "919129371733"; // Replace with your phone number including country code
+    const message = "Hello! I would like to know more."; // Optional: Replace with your message
+    const encodedMessage = encodeURIComponent(message); // Encode the message for the URL
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+    window.open(whatsappUrl, "_blank");
+  };
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
 
   return (
     <div className="parent-div ">
@@ -52,9 +78,13 @@ function Home() {
               </div>
             </div>
 
-            <div className="login-I1163_57 pos-abs" onClick={()=>{navigate("/login")}}>
+            <div
+              className="login-I1163_57 pos-abs"
+              onClick={() => {
+                alert("Coming Soon..");
+              }}
+            >
               <span className="login-I1163_57-0">{`Login`}</span>
-             
             </div>
           </div>
 
@@ -67,7 +97,12 @@ function Home() {
               </div>
             </div>
 
-            <div className="sign-up-I1164_561 pos-abs" onClick={()=>{navigate("register")}}>
+            <div
+              className="sign-up-I1164_561 pos-abs"
+              onClick={() => {
+                alert("Coming Soon..");
+              }}
+            >
               <span className="sign-up-I1164_561-0">{`Sign up`}</span>
             </div>
           </div>
@@ -100,13 +135,15 @@ function Home() {
 
           <div className="whatsapp-1-1168 pos-abs">
             <div className="vector-1169 pos-abs">
-              <div className="nodeBg-1169 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat "></div>
+              <div className="nodeBg-1169 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat "  onClick={openWhatsApp} style={{cursor:"pointer"}}></div>
             </div>
           </div>
 
           <div className="group-3-1175 pos-abs">
             <div className="c-91-9918686874-1181 pos-abs">
-              <span className="c-91-9918686874-1181-0">{`+91 9918686874`}</span>
+              <a href="tel:+919129371733" className="c-91-9918686874-1181-0">
+                +91 9129371733
+              </a>
             </div>
 
             <div className="call192-1-1176 pos-abs">
@@ -124,7 +161,12 @@ function Home() {
 
           <div className="group-4-1182 pos-abs">
             <div className="wwwabcgmailcom-1186 pos-abs">
-              <span className="wwwabcgmailcom-1186-0">{`www.abc@gmail.com`}</span>
+              <a
+                href="mailto:rk@drrkvishwakarma.com"
+                className="wwwabcgmailcom-1186-0"
+              >
+                rk@drrkvishwakarma.com
+              </a>
             </div>
 
             <div className="mail-1-1183 pos-abs">
@@ -161,43 +203,73 @@ function Home() {
           <div className="component-12-1191 pos-abs">
             <div className="component-2-1194 pos-abs">
               <div className="home-I1194_10192 pos-abs">
-                <span className="home-I1194_10192-0">{`Home`}</span>
+                <span className="home-I1194_10192-0 span1">{`Home`}</span>
               </div>
             </div>
 
-            <div className="group-6-1192 pos-abs" onClick={()=>{navigate("/bookanappointment")}}>
+            <div
+              className="group-6-1192 pos-abs"
+              onClick={() => {
+                alert("Coming Soon..");
+              }}
+            >
               <div className="book-appointmen-I1192_10170 pos-abs">
-                <span className="book-appointmen-I1192_10170-0">{`Book Appointment`}</span>
+                <span className="book-appointmen-I1192_10170-0 span1">{`Book Appointment`}</span>
               </div>
             </div>
 
             <div className="component-1-1193 pos-abs">
-              <div className="our-treatments-I1193_10183 pos-abs">
-                <span className="our-treatments-I1193_10183-0">{`Our Treatments`}</span>
+              <div
+                className="our-treatments-I1193_10183 pos-abs"
+                onClick={() => {
+                  alert("Coming Soon..");
+                }}
+              >
+                <span className="our-treatments-I1193_10183-0 span1">{`Our Treatments`}</span>
               </div>
             </div>
 
             <div className="component-3-1195 pos-abs">
-              <div className="gallery-I1195_10203 pos-abs">
-                <span className="gallery-I1195_10203-0">{`Gallery `}</span>
+              <div
+                className="gallery-I1195_10203 pos-abs"
+                onClick={() => {
+                  alert("Coming Soon..");
+                }}
+              >
+                <span className="gallery-I1195_10203-0 span1">{`Gallery `}</span>
               </div>
             </div>
 
             <div className="component-5-1196 pos-abs">
-              <div className="testimonials-I1196_10219 pos-abs">
-                <span className="testimonials-I1196_10219-0">{`Testimonials `}</span>
+              <div
+                className="testimonials-I1196_10219 pos-abs"
+                onClick={() => {
+                  alert("Coming Soon..");
+                }}
+              >
+                <span className="testimonials-I1196_10219-0 span1">{`Testimonials `}</span>
               </div>
             </div>
 
             <div className="component-6-1197 pos-abs">
-              <div className="about-us-I1197_10234 pos-abs" onClick={()=>{navigate("/aboutus")}}>
-                <span className="about-us-I1197_10234-0">{`About us`}</span>
+              <div
+                className="about-us-I1197_10234 pos-abs"
+                onClick={() => {
+                  alert("Coming Soon..");
+                }}
+              >
+                <span className="about-us-I1197_10234-0 span1">{`About us`}</span>
               </div>
             </div>
 
             <div className="component-7-1198 pos-abs">
-              <div className="contact-us-I1198_10242 pos-abs" onClick={()=>{navigate("/contactus")}}>
-                <span className="contact-us-I1198_10242-0">{`Contact us`}</span>
+              <div
+                className="contact-us-I1198_10242 pos-abs"
+                onClick={() => {
+                  alert("Coming Soon..");
+                }}
+              >
+                <span className="contact-us-I1198_10242-0 span1">{`Contact us`}</span>
               </div>
             </div>
           </div>
@@ -1160,8 +1232,8 @@ and  Spondylosis`}</span>
               </div>
             </div>
           </div>
-
-          <div className="group-34-1492 pos-abs">
+      
+          <div className="group-34-1492 pos-abs" >
             <div className="group-33-1493 pos-abs">
               <div className="component-10-1494 pos-abs">
                 <div className="ellipse-4-I1494_38214 pos-abs"></div>
@@ -1169,7 +1241,7 @@ and  Spondylosis`}</span>
                 <div className="ellipse-5-I1494_38215 pos-abs"></div>
               </div>
 
-              <div className="phone-1499 pos-abs">
+              <div className="phone-1499 pos-abs" onClick={handlePhoneCall} style={{cursor:"pointer"}}>
                 <span className="phone-1499-0">{`Phone`}</span>
               </div>
 
@@ -1253,19 +1325,32 @@ and  Spondylosis`}</span>
             <div className="why-choose-home-1440 pos-abs">
               <span className="why-choose-home-1440-0">{`Why Choose Homeopathy?`}</span>
             </div>
-           
-
-
-
 
             <div className="natural-and-non-1479 pos-abs">
-                <ul>
-                    <li> Natural and Non-Toxic: Homeopathic remedies are made from natural substances and are free from harmful side effects.</li>
-                    <li>Personalized Treatment: Every remedy is selected based on your unique physical and emotional state.</li>
-                    <li>Safe for All Ages: Homeopathy is safe for children, adults, and even pets.</li>
-                    <li>Holistic Approach: Homeopathy treats the person as a whole, focusing on mental, emotional, and physical aspects of health.</li>
-                    <li>Proven Track Record: Thousands of years of combined clinical and anecdotal evidence support the effectiveness of homeopathy.</li>
-                </ul>
+              <ul>
+                <li>
+                  {" "}
+                  Natural and Non-Toxic: Homeopathic remedies are made from
+                  natural substances and are free from harmful side effects.
+                </li>
+                <li>
+                  Personalized Treatment: Every remedy is selected based on your
+                  unique physical and emotional state.
+                </li>
+                <li>
+                  Safe for All Ages: Homeopathy is safe for children, adults,
+                  and even pets.
+                </li>
+                <li>
+                  Holistic Approach: Homeopathy treats the person as a whole,
+                  focusing on mental, emotional, and physical aspects of health.
+                </li>
+                <li>
+                  Proven Track Record: Thousands of years of combined clinical
+                  and anecdotal evidence support the effectiveness of
+                  homeopathy.
+                </li>
+              </ul>
             </div>
 
             <div className="group-497-1441 pos-abs">
@@ -1292,36 +1377,38 @@ and  Spondylosis`}</span>
 
                 <div className="group-499-1447 pos-abs">
                   <div className="explore-feature-1448 pos-abs">
-                    <span className="explore-feature-1448-0">{`Explore
+                    <span className="explore-feature-1448-0">{`Quick Links
 `}</span>
-                    <span className="explore-feature-1448-1">{`
-`}</span>
-                    <span className="explore-feature-1448-2">{`Features
-About us
-FAQs
-Contact
-Login`}</span>
+                    {/* <span className="explore-feature-1448-1">{`
+`}</span> */}
+                    <span className="explore-feature-1448-2">{`
+Our Treatments
+Gallery
+About Us
+Contact Us`}</span>
                   </div>
 
                   <div className="legal-privacy-p-1449 pos-abs">
-                    <span className="legal-privacy-p-1449-0">{`Legal
-`}</span>
+                    <span className="legal-privacy-p-1449-0">{`Homeopathy For Skin
+`}</span> 
+
+
                     <span className="legal-privacy-p-1449-1">{`
 `}</span>
-                    <span className="legal-privacy-p-1449-2">{`Privacy Policy
-Terms of Service
-Documentations`}</span>
+                    <span className="legal-privacy-p-1449-2">{`Warts & Moles
+Acnes, Pimples
+All types of Tinea`}</span>
                   </div>
 
                   <div className="subscribe-lates-1450 pos-abs">
-                    <span className="subscribe-lates-1450-0">{`Subscribe
+                    <span className="subscribe-lates-1450-0">{`General Homeopathy
 `}</span>
                     <span className="subscribe-lates-1450-1">{`
 `}</span>
-                    <span className="subscribe-lates-1450-2">{`Latest News
-Updates
-Carrier
-From us
+                    <span className="subscribe-lates-1450-2">{`Kidney Diseases
+Kidney Stone
+Liver Diseases
+Paralysis
 `}</span>
                   </div>
                 </div>
@@ -1346,7 +1433,7 @@ From us
                   </div>
                 </div>
 
-                <div className="group-501-1472 pos-abs">
+                {/* <div className="group-501-1472 pos-abs">
                   <div className="cookie-policyse-1473 pos-abs">
                     <span className="cookie-policyse-1473-0">{`Cookie Policy/Settings`}</span>
                   </div>
@@ -1358,7 +1445,7 @@ From us
                   <div className="sitemap-1475 pos-abs">
                     <span className="sitemap-1475-0">{`Sitemap`}</span>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="vector-2-1478 pos-abs">
                   <div className="nodeBg-1478 pos-abs pos-init fill-parent image-div bg-contain bg-no-repeat "></div>
@@ -1505,7 +1592,9 @@ From us
             <div className="group-54-1581 pos-abs">
               <div className="rectangle-19-I1581_54158 pos-abs"></div>
 
-              <div className="book-an-appoint-I1581_54159 pos-abs">
+              <div className="book-an-appoint-I1581_54159 pos-abs" onClick={()=>{
+                alert("Coming soon")
+              }} style={{cursor:"pointer"}}>
                 <span className="book-an-appoint-I1581_54159-0">{`BOOK AN APPOINTMENT`}</span>
               </div>
             </div>
@@ -1599,7 +1688,12 @@ From us
                     <div className="rectangle-21-I1244_54292 pos-abs"></div>
                   </div>
 
-                  <div className="book-appointmen-I1244_54293 pos-abs">
+                  <div
+                    className="book-appointmen-I1244_54293 pos-abs"
+                    onClick={() => {
+                      alert("Coming Soon..");
+                    }}
+                  >
                     <span className="book-appointmen-I1244_54293-0">{`BOOK APPOINTMENT`}</span>
                   </div>
                 </div>
@@ -1628,7 +1722,9 @@ From us
                   </div>
 
                   <div className="c-044-49570322-1255 pos-abs">
-                    <span className="c-044-49570322-1255-0">{`044 49570322`}</span>
+                    <a href="tel:+919129371733" className="c-91-9918686874-1181-0">
+                +91 9129371733
+              </a>
                   </div>
                 </div>
 
@@ -1667,7 +1763,7 @@ From us
           <span className="here-are-a-few--1623-2">{`. We are grateful to be a part of their healing journeys and are proud of the positive impact homeopathy has had on their lives.`}</span>
         </div>
         {/* Group 4981 */}
-        <section className="group-498-1585 pos-abs">
+        {/* <section className="group-498-1585 pos-abs">
           <div className="group-496-1586 pos-abs">
             <div className="group-496-1595 pos-abs">
               <div className="rectangle-23-1596 pos-abs"></div>
@@ -1762,7 +1858,7 @@ From us
             </div>
           </div>
 
-          <div className="group-496-1615 pos-abs">
+           <div className="group-496-1615 pos-abs">
             <div className="rectangle-23-1616 pos-abs"></div>
 
             <div className="group-488-1617 pos-abs">
@@ -1789,6 +1885,17 @@ From us
 `}</span>
                 </div>
               </div>
+            </div>
+          </div> 
+        </section> */}
+        <section>
+          <div className="carousel">
+            <div className="carousel-item">
+              <img
+                src={images[1].src}
+                alt={images[currentIndex].alt}
+                className="carousel-image"
+              />
             </div>
           </div>
         </section>
