@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700;800;900&display=swap");
 body {
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
 }
 
-h1, h2, h3,p {
-  font-family: 'Oswald', sans-serif;
+h1,
+h2,
+h3,
+p {
+  font-family: "Oswald", sans-serif;
   font-weight: 700; /* Use the desired font weight */
 }
 
@@ -416,7 +419,7 @@ body {
   white-space: pre-wrap;
   color: #2e6f40ff;
 }
-.c-91-9918686874-1181-0{
+.c-91-9918686874-1181-0 {
   font-size: 14px;
 }
 .call192-1-1176 {
@@ -556,13 +559,15 @@ body {
   box-sizing: border-box;
 }
 .group-7-1187 {
-  width: 16.6%;
-  height: 0.82%;
-  top: 1.09%;
+  width: 20.6%;
+  height: 80px;
+  top: 72px;
   left: 6.46%;
   z-index: 1;
   transform: rotate(0deg);
+  padding-bottom: 0px;
 }
+
 .nodeBg-1189,
 .nodeBg-1257,
 .nodeBg-1199,
@@ -597,14 +602,14 @@ body {
   opacity: 1;
 }
 .logo-pdfpage000-1189 {
-  width: 33.29%;
-    height: 100%;
-    top: 0%;
-    left: 0%;
-    z-index: 1;
-    transform: rotate(0deg);
-    overflow: hidden;
-    border-radius: 1043.5px;
+  width: 36.29%;
+  height: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 1;
+  transform: rotate(0deg);
+  overflow: hidden;
+  border-radius: 121.5px;
 }
 .homoeopathic-he-1188 {
   width: 64.44%;
@@ -617,13 +622,10 @@ body {
   line-height: 0px;
 }
 .homoeopathic-he-1188-0 {
-  font-size: calc(14 * var(--ratio));
-
-  line-height: calc(12 * var(--ratio));
-
+  font-size: calc(15 * var(--ratio));
+  line-height: calc(15 * var(--ratio));
   font-family: Oswald;
   font-weight: 600;
-
   text-decoration: none;
   text-transform: none;
   white-space: pre-wrap;
@@ -1007,7 +1009,7 @@ body {
 
   line-height: calc(20 * var(--ratio));
 
-  font-family: Oswald;
+  font-family: Oswald-regular;
   font-weight: 300;
 
   text-decoration: none;
@@ -2585,9 +2587,9 @@ body {
   text-align: left;
   line-height: 27px;
 }
-.natural-and-non-1479>ul{
-    font-size: 20px;
-    color: #236f21;
+.natural-and-non-1479 > ul {
+  font-size: 20px;
+  color: #236f21;
 }
 .group-497-1441 {
   width: 100%;
@@ -2617,7 +2619,7 @@ body {
   text-align: left;
   line-height: 0px;
 }
-.login-component{
+.login-component {
   position: absolute;
   top: 0;
   z-index: 100000;
@@ -3940,7 +3942,7 @@ body {
   top: 26.56%;
   left: -73.89%;
   z-index: 1;
- transform: rotate(0deg) scaleX(-1);;
+  transform: rotate(0deg) scaleX(-1);
   overflow: hidden;
 }
 .group-1606 {
@@ -4109,4 +4111,32 @@ body {
   opacity: 1; /* Show the border on hover */
   width: 75%; /* Adjusted width to highlight the hover effect */
 }
-
+.carousel{
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+.carousel-item{
+  width: 85%;
+  text-align: left;
+  line-height: 15px;
+  background-color: #236f21;
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+}
+.carousel-item>p{
+  font: oswald-regular;
+  font-weight: lighter;
+}
+.carousel-item>div{
+  border-radius: 10%;
+  width: 25%;
+  height: 50px;
+}
+.carousel-item>div>img{
+  border-radius: 10%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}

@@ -31,6 +31,9 @@ import image28 from "../Assets/Images/image28.png";
 import image29 from "../Assets/Images/image29.png";
 import image30 from "../Assets/Images/image30.png";
 import image31 from "../Assets/Images/image31.png";
+import ima from "../Assets/patien.jpg"
+import ima1 from "../Assets/per2.webp"
+import ima2 from "../Assets/per3.jpg"
 import { useNavigate } from "react-router-dom";
 
 function Home() {
@@ -1891,11 +1894,22 @@ Paralysis
         <section>
           <div className="carousel">
             <div className="carousel-item">
-              <img
-                src={images[1].src}
-                alt={images[currentIndex].alt}
-                className="carousel-image"
-              />
+              <div><img src={ima}/></div>
+              <p>Sunil Kumar</p>
+              <p>Kidney Stone Patient</p>
+              <p>"All the doctors, nurses, aides, food service employees, security and maintenance workers deserve such praise for their attention & care."</p>
+            </div>
+            <div className="carousel-item">
+              <div><img src={ima1}/></div>
+              <p>Suresh</p>
+              <p>Paralysis Patient</p>
+              <p>"All the doctors, nurses, aides, food service employees, security and maintenance workers deserve such praise for their attention & care."</p>
+            </div>
+            <div className="carousel-item">
+              <div><img src={ima}/></div>
+              <p>Saloni</p>
+              <p>G.Bladder Stone Patient</p>
+              <p>"All the doctors, nurses, aides, food service employees, security and maintenance workers deserve such praise for their attention & care."</p>
             </div>
           </div>
         </section>
