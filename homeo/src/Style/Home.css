@@ -845,7 +845,7 @@ body {
 .a-drop-of-homeo-1203-0 {
   font-size: calc(40 * var(--ratio));
 
-  line-height: calc(40 * var(--ratio));
+  line-height: calc(46 * var(--ratio));
 
   font-family: Oswald;
   font-weight: 600;
@@ -868,7 +868,7 @@ body {
 .over-a-long-per-1205-0 {
   font-size: calc(20 * var(--ratio));
 
-  line-height: calc(20 * var(--ratio));
+  line-height: calc(25 * var(--ratio));
 
   font-family: Oswald;
   font-weight: 300;
@@ -917,7 +917,7 @@ body {
   left: 0%;
   z-index: 0;
   transform: rotate(0deg);
-  text-align: left;
+  text-align: center;
   line-height: 0px;
 }
 .make-an-appoint-I1204_10286-0 {
@@ -1007,7 +1007,7 @@ body {
 .homeopathy-is-a-1264-0 {
   font-size: calc(20 * var(--ratio));
 
-  line-height: calc(20 * var(--ratio));
+  line-height: calc(26 * var(--ratio));
 
   font-family: Oswald-regular;
   font-weight: 300;
@@ -1095,7 +1095,7 @@ body {
 .homeopathy-for--1263-0 {
   font-size: calc(20 * var(--ratio));
 
-  line-height: calc(20 * var(--ratio));
+  line-height: calc(26 * var(--ratio));
 
   font-family: Oswald;
   font-weight: 300;
@@ -1279,7 +1279,7 @@ body {
 .prostate-enlarg-1319-0 {
   font-size: calc(18 * var(--ratio));
 
-  line-height: calc(18 * var(--ratio));
+  line-height: calc(20 * var(--ratio));
 
   font-family: Oswald Regular;
   font-weight: 400;
@@ -4039,7 +4039,7 @@ body {
 }
 .carousel {
   position: absolute;
- bottom: 550px;
+ bottom: 600px;
  left: 150px;
   display: flex;
   align-items: center;
@@ -4128,6 +4128,7 @@ body {
 .carousel-item>p{
   font: oswald-regular;
   font-weight: lighter;
+  line-height: 20px;
 }
 .carousel-item>div{
   border-radius: 10%;

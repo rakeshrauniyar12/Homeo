@@ -1666,7 +1666,7 @@ Paralysis
                   </div>
 
                   <div className="name-1235 pos-abs">
-                    <span className="name-1235-0">{`Name`}</span>
+                    <span className="name-1235-0">{`Phone`}</span>
                   </div>
                 </div>
 
@@ -1697,7 +1697,7 @@ Paralysis
                       alert("Coming Soon..");
                     }}
                   >
-                    <span className="book-appointmen-I1244_54293-0">{`BOOK APPOINTMENT`}</span>
+                    <span className="book-appointmen-I1244_54293-0">{`BOOK AN APPOINTMENT`}</span>
                   </div>
                 </div>
 
